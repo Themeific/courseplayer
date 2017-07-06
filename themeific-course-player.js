@@ -74,6 +74,13 @@
                         
                     }
 
+                    if(typeof(course.returnto) != "undefined"){
+                        if(course.returnto != ""){
+                            $("a[class*='_link__dashboard']").attr('href', course.returnto);
+                        }
+                        
+                    }
+
                     if(typeof(course.logoimage) != "undefined"){
                         if(typeof(course.logobgcolor) != "undefined") {
                             var bgcolor = "background-color:" + course.logobgcolor;
